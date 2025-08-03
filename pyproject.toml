@@ -14,5 +14,6 @@ dependencies = [
     "pandas>=2.3.1",
     "pillow>=11.3.0",
     "plotly[kaleido]>=6.2.0",
+    "quarto>=0.1.0",
     "wordcloud>=1.9.4",
 ]
