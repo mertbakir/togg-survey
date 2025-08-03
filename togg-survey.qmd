@@ -11,10 +11,13 @@ format:
 jupyter: python3
 ---
 
-> Kullanıcılar tarafından oluşturulmuş anketin sonuçlarıdır. Markaya ait bir çalışma değildir. 
+> ⁉️ Kullanıcı grubunda sık konuşulan konulardan yola çıkılarak hazırlanılmış anketin sonuçlarıdır. Markaya ait bir çalışma değildir.  
+> 💻 Bilgisayardan bakarsanız daha düzgün grafikler görünecektir.  
+> 📉 Veriye [Github](https://github.com/mertbakir/togg-survey/) reposundan erişebilirsiniz.  
+> 🙏 Katılanlara tekrar teşekkür ediyorum. 
 
 
-## Kullanıcı Profili
+## 🧑Kullanıcı Profili
 
 ```{python}
 import pandas as pd
@@ -202,7 +205,7 @@ def make_chart(question:int|str, horizontal=False, top_n=0, sort_values=False, r
         yaxis_title=None,
         plot_bgcolor=bgcolor,
         paper_bgcolor=bgcolor,
-        margin=dict(l=10, r=10, t=80, b=80),
+        margin=dict(l=15, r=40, t=80, b=80),
         title=title,
         title_font=dict(family=font_family, color=white, weight='bold'),
         hoverlabel=dict(
@@ -219,7 +222,8 @@ def make_chart(question:int|str, horizontal=False, top_n=0, sort_values=False, r
             xanchor='right', yanchor='top',
             font=dict(size=12, color=white)
         )
-        ]
+        ],
+        height=400
     )
     fig.update_traces(
             texttemplate=' %{text}',
@@ -267,7 +271,7 @@ for idx in [2, 3, 4, 10, 11]:
     print()
 ```
 
-## T10X Profili
+## 🚗T10X Profili
 
 ```{python}
 fig = make_chart('Yıl-Ay', sort_values=False, horizontal=True)
@@ -283,7 +287,7 @@ for idx in [5, 6, 7, 8, 9, 12]:
     print()
 ```
 
-## Sonraki Aracım
+## ✨Sonraki Aracım
 
 ```{python}
 for idx in range(13, 16):
@@ -293,7 +297,7 @@ for idx in range(13, 16):
 ```
 
 
-## Şarj Alışkanlıkları
+## 🔋Şarj Alışkanlıkları
 
 ```{python}
 for idx in range(16, 20):
@@ -304,7 +308,7 @@ for idx in range(16, 20):
 
 
 
-## Memnuniyet Durumu
+## 🐞Memnuniyet Durumu
 
 ```{python}
 for idx in [21, 20]:
@@ -322,7 +326,7 @@ for idx in range(22, 32):
     print()
 ```
 
-## Servis Deneyimi
+## 🦾Servis Deneyimi
 
 ```{python}
 for idx in range(34, 36):
@@ -339,7 +343,7 @@ for idx in range(34, 36):
     print()
 ```
 
-## Sık Konuşulan Hatalar
+## ⚠️Sık Konuşulan Hatalar
 
 ```{python}
 for idx in range(32, 34):
